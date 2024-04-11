@@ -8,15 +8,17 @@ setopt HIST_IGNORE_SPACE     # Ignore commands that start with a space.
 setopt HIST_REDUCE_BLANKS    # Remove unnecessary blank lines.
 setopt SHARE_HISTORY         # Share history in every terminal session
 
+# Disable BEEP
+unsetopt beep
+
 # Use modern completion system. Other than enabling globdots for showing
 # hidden files, these ares values in the default generated zsh config.
 autoload -U compinit
 compinit
 _comp_options+=(globdots)
 
-# autoload -U +X bashcompinit && bashcompinit
-
-#complete -o nospace -C /usr/local/bin/terraform terraform
+# Add colors support 
+autoload -U colors && colors
 
 # Adding colors to the 'ls' command
 alias ls='ls -G'
@@ -28,5 +30,3 @@ zstyle ':completion:*' menu select
 #fzf
 eval "$(fzf --zsh)"
 
-#VIM
-#export VIM=~/.config/vim/
