@@ -27,6 +27,8 @@ export CLICOLOR=1
 # autocompletion with an arrow-key driven interface
 zstyle ':completion:*' menu select
 
-#fzf
+# fzf
 eval "$(fzf --zsh)"
 
+# zsh-autosuggestions
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
