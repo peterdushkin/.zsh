@@ -32,3 +32,8 @@ eval "$(fzf --zsh)"
 
 # zsh-autosuggestions
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# =========== SHOULD BE AT THE END ====================== # 
+# zsh-syntax-highlighting
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
